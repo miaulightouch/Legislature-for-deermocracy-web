@@ -8,5 +8,11 @@ collections:
     label: Blog
     folder: blog
     fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Description
+        name: description
+        widget: string
       - name: body
         widget: markdown
