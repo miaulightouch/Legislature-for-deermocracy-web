@@ -91,6 +91,7 @@ export default defineConfig({
       { text: '關於青鳥行動', link: '/action' },
       { text: '關於我們', link: '/about' },
       { text: '網誌', link: '/blog' },
+      { text: '新聞', link: '/news' },
     ],
     // sidebar: [
     //   {
