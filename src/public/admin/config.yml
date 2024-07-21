@@ -2,6 +2,7 @@ local_backend: false
 backend:
   branch: main
   name: git-gateway
+  squash_merges: true
 media_folder: /src/public
 editor:
   preview: false
