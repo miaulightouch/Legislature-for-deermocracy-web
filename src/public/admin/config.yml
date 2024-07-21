@@ -3,10 +3,14 @@ backend:
   branch: main
   name: git-gateway
 media_folder: /src/public
+editor:
+  preview: false
+publish_mode: editorial_workflow
 collections:
   - name: blog
     label: Blog
     folder: 'src/blog'
+    create: true
     fields:
       - label: Title
         name: title
