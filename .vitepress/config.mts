@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress';
-import { getSidebar } from 'vitepress-plugin-auto-sidebar'
+import { generateSidebar } from 'vitepress-sidebar';
 import decap, { createFolderCollection, createField } from 'vite-plugin-decap-cms';
 
 // https://vitepress.dev/reference/site-config
@@ -94,9 +94,18 @@ export default defineConfig({
       { text: '網誌', link: '/blog' },
       { text: '新聞', link: '/news' },
     ],
-    sidebar: {
-      '/news': getSidebar({ contentRoot: '/src', contentDirs: ['news'], useFrontmatter: true, collapsed: false, collapsible: false  }),
-    },
+    sidebar: generateSidebar([
+      {
+        documentRootPath: 'src/blog',
+        resolvePath: '/blog/',
+        useTitleFromFrontmatter: true,
+      },
+      {
+        documentRootPath: 'src/news',
+        resolvePath: '/news/',
+        useTitleFromFrontmatter: true,
+      }
+    ]),
     // sidebar: [
     //   {
     //     text: '目錄',
