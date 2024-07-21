@@ -90,6 +90,7 @@ export default defineConfig({
       { text: '物資庫存', link: '/supplies' },
       { text: '關於青鳥行動', link: '/action' },
       { text: '關於我們', link: '/about' },
+      { text: '網誌', link: '/blog' },
     ],
     // sidebar: [
     //   {
