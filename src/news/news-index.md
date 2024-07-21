@@ -1,5 +1,5 @@
 ---
-title: News Index
+title: Index
 description: the index of the news section
 ---
 # News index
