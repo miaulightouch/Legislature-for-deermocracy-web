@@ -1,5 +1,5 @@
 ---
-title: Test Article
+title: 首頁
 description: test article for vitepress test
 ---
 # This is context title.
