@@ -13,7 +13,7 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}_{{slug}}"
     preview_path: 'blog/{{slug}}'
-    summary: "{{title}} - {{description}} (最後更新: {{commit_date}})"
+    summary: "{{title}} - {{description}}\n(最後更新: {{commit_date}})"
     fields:
       - label: Title
         name: title
@@ -29,7 +29,7 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}_{{slug}}"
     preview_path: 'news/{{slug}}'
-    summary: "{{title}} - {{description}} (最後更新: {{commit_date}})"
+    summary: "{{title}} - {{description}}\n(最後更新: {{commit_date}})"
     fields:
       - label: Title
         name: title
