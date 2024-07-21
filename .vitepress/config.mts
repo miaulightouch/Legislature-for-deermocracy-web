@@ -136,24 +136,26 @@ export default defineConfig({
   },
   vite: {
     plugins: [
-      decap({
-        config: {
-          backend: {
-            name: 'git-gateway',
-            branch: 'main',
-          },
-          mediaFolder: 'src/public',
-          collections: [
-            createFolderCollection({
-              name: 'blog',
-              label: 'Blog',
-              fields: [
-                createField('markdown', { name: 'body'})
-              ]
-            })
-          ]
-        }
-      })
+      // FIXME: 這個 plugin 有問題，暫時先關掉
+      // decap({
+      //   config: {
+      //     backend: {
+      //       name: 'git-gateway',
+      //       branch: 'main',
+      //     },
+      //     mediaFolder: '/src/public',
+      //     collections: [
+      //       createFolderCollection({
+      //         name: 'blog',
+      //         label: 'Blog',
+      //         folder: 'blog',
+      //         fields: [
+      //           createField('markdown', { name: 'body'})
+      //         ]
+      //       })
+      //     ]
+      //   }
+      // })
     ]
   }
 });

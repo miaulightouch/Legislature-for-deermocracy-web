@@ -1,0 +1,12 @@
+local_backend: false
+backend:
+  branch: main
+  name: git-gateway
+media_folder: /src/public
+collections:
+  - name: blog
+    label: Blog
+    folder: blog
+    fields:
+      - name: body
+        widget: markdown

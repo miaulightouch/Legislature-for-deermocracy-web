@@ -4,4 +4,5 @@
 node_modules
 .env
 
-src/public/admin/
+# FIXME: 未來修正 decap vite plugin 後啟用
+# src/public/admin/
